@@ -1,0 +1,25 @@
+# Build output
+target/
+
+# IDE files
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Test artifacts
+sample-msg/
+screenshots/
+
+# H2 database files
+*.mv.db
+*.trace.db
+
+# Logs
+*.log
+dependency-reduced-pom.xml
