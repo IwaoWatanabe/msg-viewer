@@ -1,18 +1,9 @@
-package com.msgviewer.ui;
+package com.msgviewer;
 
-import com.msgviewer.comment.Comment;
-import com.msgviewer.comment.CommentRepository;
-import com.msgviewer.core.AttachmentData;
-import com.msgviewer.core.MsgData;
-import com.msgviewer.core.MsgParser;
-import com.msgviewer.preview.PreviewEngine;
-import com.msgviewer.preview.PreviewResult;
-import com.msgviewer.preview.ZipHandler;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.browser.Browser;
 import org.eclipse.swt.custom.SashForm;
 import org.eclipse.swt.custom.StackLayout;
-import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.dnd.*;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -40,7 +31,7 @@ import java.util.List;
  *   │ Comment Panel                     │
  *   └──────────────────────────────────┘
  */
-public class MainWindow {
+class MainWindow {
 
     private static final Logger log = LoggerFactory.getLogger(MainWindow.class);
     private static final DateTimeFormatter DT_FMT = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss");

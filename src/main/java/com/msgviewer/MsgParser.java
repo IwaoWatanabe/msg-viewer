@@ -1,4 +1,4 @@
-package com.msgviewer.core;
+package com.msgviewer;
 
 import org.apache.poi.hsmf.MAPIMessage;
 import org.apache.poi.hsmf.datatypes.AttachmentChunks;
@@ -18,7 +18,7 @@ import java.util.List;
  * Parses Outlook MSG files using Apache POI HSMF.
  * Extracts metadata, body text/HTML, and attachments.
  */
-public class MsgParser {
+class MsgParser {
 
     private static final Logger log = LoggerFactory.getLogger(MsgParser.class);
     private final Tika tika = new Tika();

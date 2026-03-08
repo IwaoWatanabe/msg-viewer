@@ -1,10 +1,10 @@
-package com.msgviewer.preview;
+package com.msgviewer;
 
 /**
  * Result of rendering a file for preview in the SWT GUI.
  * Can contain HTML content (for Browser widget), image bytes, or plain text.
  */
-public class PreviewResult {
+class PreviewResult {
 
     public enum Type {
         HTML,       // Render in SWT Browser widget

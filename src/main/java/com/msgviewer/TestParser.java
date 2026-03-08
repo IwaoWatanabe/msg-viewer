@@ -1,12 +1,4 @@
-package com.msgviewer.util;
-
-import com.msgviewer.core.MsgParser;
-import com.msgviewer.core.MsgData;
-import com.msgviewer.core.AttachmentData;
-import com.msgviewer.preview.PreviewEngine;
-import com.msgviewer.preview.PreviewResult;
-import com.msgviewer.comment.CommentRepository;
-import com.msgviewer.comment.Comment;
+package com.msgviewer;
 
 import java.nio.file.Path;
 import java.util.List;

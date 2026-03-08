@@ -1,6 +1,5 @@
-package com.msgviewer.preview;
+package com.msgviewer;
 
-import com.msgviewer.core.AttachmentData;
 import org.mozilla.universalchardet.UniversalDetector;
 import org.apache.poi.hwpf.HWPFDocument;
 import org.apache.poi.hwpf.converter.WordToHtmlConverter;
@@ -44,7 +43,7 @@ import java.util.*;
  * Central engine for rendering file previews.
  * Supports images, text, PDF, Word, Excel, PowerPoint, ZIP, and EML.
  */
-public class PreviewEngine {
+class PreviewEngine {
 
     private static final Logger log = LoggerFactory.getLogger(PreviewEngine.class);
     private static final long ZIP_MAX_TOTAL_SIZE = 500L * 1024 * 1024; // 500MB
