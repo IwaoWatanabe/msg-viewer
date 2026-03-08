@@ -1,3 +1,8 @@
+## JBangを利用したアプリの起動
+
+マシンにJDK11以上を導入して、[JBnag.dev](https://www.jbang.dev/download/) にアクセスして jbang コマンドが利用できるようにすれば、利用できます。
+
+App.java ファイルを指定して起動することで利用できます。
 
 ## Windows で起動するときの注意
 
@@ -30,7 +35,12 @@ org.eclipse.swt.cocoa.macosx.aarch64 | Mx プロセッサ向け
 
 また起動時に次のようにVMオプションを指定する必要があります。
 
-```
+```sh
 jbang run --java-options="-XstartOnFirstThread" App.java
 ```
 
+jbang export local でJARファイルを生成した後は、次のように起動オプションを指定します。
+
+```sh
+java -XstartOnFirstThread -jar App.jar
+```
