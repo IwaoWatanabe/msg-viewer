@@ -7,6 +7,7 @@ target/
 .project
 .classpath
 .settings/
+.vscode/
 
 # OS files
 .DS_Store
@@ -23,3 +24,6 @@ screenshots/
 # Logs
 *.log
 dependency-reduced-pom.xml
+*.jar
+*.clas
+
