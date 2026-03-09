@@ -1,27 +1,14 @@
-package com.msgviewer.util;
-
-import com.msgviewer.core.MsgParser;
-import com.msgviewer.core.MsgData;
-import com.msgviewer.core.AttachmentData;
-import com.msgviewer.preview.PreviewEngine;
-import com.msgviewer.preview.PreviewResult;
-import com.msgviewer.comment.CommentRepository;
-import com.msgviewer.comment.Comment;
+package com.msgviewer;
 
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.browser.Browser;
 import org.eclipse.swt.custom.SashForm;
-import org.eclipse.swt.custom.StackLayout;
 import org.eclipse.swt.custom.StyledText;
 import org.eclipse.swt.graphics.*;
 import org.eclipse.swt.layout.*;
 import org.eclipse.swt.widgets.*;
 
-import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.Base64;
-import java.util.List;
 
 /**
  * Launches the SWT GUI with test MSG files, captures screenshots, then exits.

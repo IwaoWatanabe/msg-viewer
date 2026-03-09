@@ -1,9 +1,9 @@
-package com.msgviewer.core;
+package com.msgviewer;
 
 /**
  * Represents a single attachment extracted from an MSG file.
  */
-public class AttachmentData {
+class AttachmentData {
     private String fileName;
     private String mimeType;
     private byte[] data;

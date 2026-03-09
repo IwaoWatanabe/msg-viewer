@@ -1,4 +1,4 @@
-package com.msgviewer.preview;
+package com.msgviewer;
 
 import net.lingala.zip4j.ZipFile;
 import net.lingala.zip4j.model.FileHeader;
@@ -8,14 +8,13 @@ import org.slf4j.LoggerFactory;
 import java.io.*;
 import java.nio.file.*;
 import java.nio.file.attribute.BasicFileAttributes;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Handles ZIP file operations including encrypted ZIP support.
  * Includes ZIP bomb protection via size and file count limits.
  */
-public class ZipHandler {
+class ZipHandler {
 
     private static final Logger log = LoggerFactory.getLogger(ZipHandler.class);
     private static final long MAX_TOTAL_SIZE = 500L * 1024 * 1024; // 500MB

@@ -1,11 +1,11 @@
-package com.msgviewer.comment;
+package com.msgviewer;
 
 import java.time.LocalDateTime;
 
 /**
  * Represents a single comment attached to a MSG file or its attachment.
  */
-public class Comment {
+class Comment {
     private long id;
     private String fileHash;       // Hash key identifying the MSG or attachment
     private String fileName;       // Display name of the target file

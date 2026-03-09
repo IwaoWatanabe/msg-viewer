@@ -1,4 +1,4 @@
-package com.msgviewer.comment;
+package com.msgviewer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,7 +16,7 @@ import java.util.List;
  * DAO for managing comments stored in H2 embedded database.
  * Database file is stored at ~/.msg-viewer/comments.mv.db
  */
-public class CommentRepository {
+class CommentRepository {
 
     private static final Logger log = LoggerFactory.getLogger(CommentRepository.class);
     private final String dbUrl;

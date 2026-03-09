@@ -1,11 +1,11 @@
-package com.msgviewer.core;
+package com.msgviewer;
 
 import java.util.List;
 
 /**
  * Represents a parsed Outlook MSG file with metadata, body, and attachments.
  */
-public class MsgData {
+class MsgData {
     private String subject;
     private String from;
     private String to;
